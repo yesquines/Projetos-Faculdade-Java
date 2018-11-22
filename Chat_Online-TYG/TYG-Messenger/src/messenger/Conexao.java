@@ -22,8 +22,8 @@ public class Conexao {
 		this.t = t;
 
 		try {
-
-			s = new Socket("208.89.212.86", 5000); 
+		String ip = System.getProperty("208.89.212.86");
+			s = new Socket(ip, 5000); 
 			showMessageDialog(null, "Bem Vindo ao TYG Messenger!");
 			t.conectar.setEnabled(false);
 			t.desconectar.setEnabled(true);
